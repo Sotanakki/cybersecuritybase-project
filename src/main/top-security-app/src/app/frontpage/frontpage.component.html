@@ -1,0 +1,56 @@
+<div class="container">
+
+  <h1>Welcome to our awesome event signing system</h1>
+
+  <h3> What would you like to do next?</h3>
+
+  <div (click)="toSignup()" class="col-md-3 todoContainer hoverable">
+
+    <div class="todo-header">
+      Signup for an event
+    </div>
+    <hr>
+    <div class="todo-content">
+      Sign up for new event in here
+
+    </div>
+
+
+  </div>
+
+  <div (click)="toReview()" class="col-md-3 todoContainer hoverable">
+    <div class="todo-header">
+      Review your ticket
+    </div>
+
+    <hr>
+    <div class="todo-content">
+      Review your payment information
+    </div>
+
+  </div>
+
+  <div  class="col-md-3 todoContainer hoverable" style="height:250px !important;">
+
+    <div class="todo-header">
+      Administrate your own event
+    </div>
+
+    <hr>
+    <div class="todo-content" >
+      See who has signed up for your event
+      <br>
+      <label>user</label>
+      <input [(ngModel)]="user" type="text">
+      <label>password</label>
+      <input [(ngModel)]="password" type="password">
+      <button (click)="toAdmin()"> Log in </button>
+    </div>
+
+  </div>
+  <div *ngIf="videoUrl != null">
+    <iframe class="e2e-iframe-trusted-src" width="640" height="390" [src]="videoUrl"></iframe>
+  </div>
+
+</div>
+

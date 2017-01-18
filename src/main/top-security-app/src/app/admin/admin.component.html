@@ -1,0 +1,20 @@
+<div class="container">
+  <div>
+    <div class="user-listing" *ngFor="let item of signups; ">
+      Awesome event
+      <hr style="margin-top:4px; margin-bottom:4px;">
+      Name: {{item.name}}
+      <br>
+      Ticket: {{item.ticket}}
+    </div>
+
+  </div>
+  <div *ngIf="signups?.length == 0">
+    No signups yet
+  </div>
+
+  <div style="margin-top:32px; font-size:16px;">
+    <button routerLink="/">Get Back</button>
+  </div>
+
+</div>

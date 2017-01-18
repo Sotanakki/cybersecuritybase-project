@@ -1,0 +1,30 @@
+.todoContainer{
+  background-color:skyblue;
+  margin:12px;
+  padding:8px;
+  font-size: 16px;
+  height:100px;
+  overflow:hidden;
+}
+
+
+.todo-header{
+  font-weight:700;
+  text-align:center;
+}
+
+hr{
+  margin-left:0;
+  margin-right:0;
+  margin-bottom:0;
+}
+
+.todo-content{
+  margin-top:8px;
+  text-align:center;
+}
+
+
+.hoverable{
+  cursor:pointer;
+}

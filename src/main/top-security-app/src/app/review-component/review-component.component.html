@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div>
+      <label>Ticket Id</label><br>
+      <input type="text" [(ngModel)]="ticketID">
+      <button (click)="searchTicket()">Search</button>
+  </div>
+
+  <div *ngIf="ticketInfo != null">
+        Name: {{ticketInfo.name}}
+    <br>
+        Address: {{ticketInfo.address}}
+    <br>
+      CreditcardNumber: {{ticketInfo.creditcardNumber}}
+  </div>
+
+  <div style="margin-top:32px; font-size:16px;">
+    <button routerLink="/">Get Back</button>
+  </div>
+</div>
